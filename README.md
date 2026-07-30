@@ -4,10 +4,10 @@ A desktop tool that scrapes county foreclosure auction sites and turns them into
 
 ## Overview
 
-Foreclosure auction data is publicly available, but only if you're willing to work for it. Across Florida, Colorado, and New Jersey, each county runs its own realforeclose.com site with its own JavaScript calendar, its own quirks, and zero export functionality. Pulling leads means clicking into every case, on every date, in every county, by hand.
-
-**This project solves the problem of** manually collecting foreclosure auction data one county at a time. Point it at a date range — anywhere from the next 2 weeks to 6 months out — and it drives a real browser through the auction calendar for any of 44 counties across 3 states, opens every case scheduled, pulls **up to 15** parties per case to identify the plaintiff/defendant, and reads the live auction status. Add in the optional Zillow enrichment step and each lead can carry **up to 12** data points — case details plus valuation, home type, and listing status — before it all lands in a single de-duplicated Excel file.
-
+Foreclosure auction data is public, but only if you're willing to work for it. Florida, Colorado, and New Jersey each run their own realforeclose.com sites — no export option, and leads only come from clicking into every case, every date, every county, by hand.
+ 
+**This project solves the problem of** manually collecting foreclosure auction data one county at a time. Point it at a date range and it scrapes any of 44 counties across 3 states, pulling case parties, auction status, and — optionally — a Zillow valuation for each property, into one de-duplicated Excel file.
+ 
 ## Who Would Benefit From This Tool
 
 - Real estate wholesalers and investors sourcing pre-foreclosure and auction leads
